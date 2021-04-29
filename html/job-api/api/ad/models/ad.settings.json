@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ads",
+  "info": {
+    "name": "Ad"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "job_id": {
+      "via": "ads",
+      "model": "job"
+    },
+    "ad_link": {
+      "type": "string"
+    },
+    "ad_position": {
+      "type": "string"
+    },
+    "ad_screenshot": {
+      "type": "string"
+    }
+  }
+}
